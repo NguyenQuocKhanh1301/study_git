@@ -1,0 +1,243 @@
+/* reset web */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --height_header: 46.5px;
+
+}
+html{
+    font-family: "Lato", sans-serif;
+}
+
+#header{
+    position: fixed; 
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: var(--height_header);
+    background-color: black;
+    z-index: 1;
+}
+
+#header .search_bt{
+    float: right;
+    height: 100%;
+}
+
+#header .search_bt .fa{
+    height: 100%;
+    cursor: pointer;
+    line-height: 100%;
+    padding: 12px 24px;
+}
+
+#header .search_bt:hover{
+    background-color: red;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav li {
+    list-style-type: none;
+    position: relative;
+}
+
+#nav > li{
+    display: inline-block; 
+    height: var(--height_header);   
+}
+
+#nav  li  a{
+    text-decoration: none;
+}
+
+#nav > li > a{
+    display: block;
+    height: 100%;
+    padding: 12px 24px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav  > li:hover > a  , #nav .subnav li:hover >a {
+    background-color: #ccc;
+    color: black;
+}
+
+#nav li:hover .subnav{
+display: block;
+}
+
+#nav .subnav {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: absolute;
+    background-color: white;
+    display: none;
+    width: 169%;
+}    
+
+#nav .subnav li a{
+    height: 100%;
+    display: block;
+    padding: 8px 16px;
+    color: black;
+}
+
+
+#slider{
+    margin-top: var(--height_header);
+    padding-bottom: 50%;
+    background: url('/assets/image/slider/slider1.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .slider_content{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 32px 16px;
+}
+#slider .slider_content h2{
+    margin: 10px 0px;
+    font-size: 24px;
+}
+
+#slider .slider_content .slider_text_trans{
+    margin: 15px 0px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#content .content-section{
+    max-width: 800px;
+    height: fit-content;
+    padding: 64px 16px;
+    margin: 0px 74px;
+    margin-left: auto ;
+    margin-right: auto;
+}
+
+#content .content-heading-section{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+#content .content-sub-heading-section{
+    text-align: center;
+    margin: 15px 0px;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text{
+    padding: 15px 0px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member-list{
+    max-width: 800px;
+    padding: 32px 0px;
+    overflow: hidden;
+}
+
+#content .member-item{
+    text-align: center;
+    float: left;
+    width: 33.33333%;
+    
+}
+
+#content .member-name{
+    font-size: 15px;
+    margin: 15px 0px;
+    font-weight: bolder;
+}
+
+#content .member-img{
+    width: 154px;
+    height: 154px;
+    margin: 0px 0px 16px;
+    border-radius: 4px;
+}
+
+#content .box-tour{
+    background-color: black;
+    color: white;
+}
+
+#content .list-month{
+    height: fit-content;
+    background-color: white;
+    color: black;
+}
+
+#content .month-tour{
+    height: 40px;
+    font-size: 15px;
+    padding: 8px 16px;
+    color: #757575;
+    border: 1px solid #ddd;
+}
+
+#content .box-tour .status{
+    display: inline-block;
+    height: 22.5px;
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 16px;
+    padding: 0px 8px;
+    text-align: center;
+}
+
+#content .box-tour .month-tour .number{
+    display: inline-block;
+    height: 22.5px;
+    background-color: black;
+    color: white;
+    padding: 0px 8px;
+    margin-right: 16px;
+    float: right;
+    border-radius: 50%;
+    line-height: 22.5px;
+}
+
+.box-tour .content-section .infor-of-tour{
+    margin: 0px -16px !important;
+    padding: 32px 8px !important;
+}
+
+.box-tour .infor-of-tour .ticket{
+    display: inline-block;
+    width: 262px;
+    margin: 0px 0px 16px ;
+    padding: 0px 8px;
+}
+
+.box-tour .infor-of-tour .infor{
+    padding: 0.150px 16px;
+    color: black;
+    background-color: #fff;
+}
+
+.box-tour .infor-of-tour .infor p{
+    margin: 15px 0px;
+}
+
+.box-tour .infor-of-tour .ticket img{
+    display: inline-block;
+    width: 100%;
+}
